@@ -1,7 +1,7 @@
 
 # Apryse Server Signature IDP Sample
 
-This project is a Node.js application that demonstrates how to perform specific tasks. Below are the instructions for setting up the project, installing dependencies, and running the sample code.
+This project is a Node.js application that serves as a sample for detecting form fields in scanned documents and verifying the presence of a wet signature. The following instructions guide you through setting up the project, installing dependencies, and running the sample code.
 
 ## Getting Started
 
