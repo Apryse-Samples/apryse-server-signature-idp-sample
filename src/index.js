@@ -3,10 +3,11 @@ const { readdirSync } = require('fs');
 const { join } = require('path');
 const sharp = require('sharp');
 const {calculateMean, calculateStandardDeviation } = require("./util")
+const { license_key } = require('../license-key.json');
 
 //CONSTANTS
-const INPUT_DIR = join(__dirname, "files/input");
-const OUTPUT_DIR = join(__dirname, "files/output");
+const INPUT_DIR = join(__dirname, "../files/input");
+const OUTPUT_DIR = join(__dirname, "../files/output");
 const IDP_MIN_CONFIDENCE = 0.98 //this can be adjusted
 const IMAGE_DPI = 300;
 const IMAGE_FORMAT = "JPEG";
@@ -109,9 +110,9 @@ const main = async () => {
         console.log(`####################################################################`)
     }
 };
-// add your own license key as the second parameter, e.g. in place of 'YOUR_LICENSE_KEY'.
+
 PDFNet
-.runWithCleanup(main, 'YOUR_LICENSE_KEY')
+.runWithCleanup(main, license_key)
 .catch((err) => console.log("Error: ", err))
 .then(() => {
     return PDFNet.shutdown();
