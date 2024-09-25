@@ -27,6 +27,10 @@ Ensure that you have the following software installed:
    ```bash
    cd <project-directory>
    ```
+3. **Place PDF Files in the Input Directory**
+   ```bash
+   Place the PDF files you want to process isn the files/input directory. Ensure that each PDF file is under 6 pages.
+   ```
 
 ### Installing Dependencies
 
